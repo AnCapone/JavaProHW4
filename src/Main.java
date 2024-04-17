@@ -10,7 +10,6 @@ public class Main {
         System.out.print("Please, enter a symbol to find the number of occurances: ");
         char symbol = scanner.next().toLowerCase().charAt(0);
         System.out.printf("The symbol '%s' occurs %d times in the string '%s''%n", symbol, findSymbolOccurance(inputString, symbol), inputString);
-
         scanner.close();
     }
 
