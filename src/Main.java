@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -52,7 +53,8 @@ public class Main {
         String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry",
                 "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", " pea", "peanut",
                 "pear", "pepper", "pineapple", "pumpkin", "potato"};
-        String word = words[(int) (Math.random() * words.length)];
+        Random randomIndex = new Random();
+        String word = words[randomIndex.nextInt(words.length)];
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please, guess the word: ");
         while (true) {
