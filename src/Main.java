@@ -53,8 +53,8 @@ public class Main {
         String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry",
                 "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", " pea", "peanut",
                 "pear", "pepper", "pineapple", "pumpkin", "potato"};
-        Random randomIndex = new Random();
-        String word = words[randomIndex.nextInt(words.length)];
+        Random randomizer = new Random();
+        String word = words[randomizer.nextInt(words.length)];
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please, guess the word: ");
         while (true) {
